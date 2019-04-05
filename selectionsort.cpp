@@ -23,33 +23,24 @@ void selectionSort(int A[], int n)
 		}
 		swap(A[i], A[max]);
 	}
-	for(int i=0; i < n; i++)
-		cout << A[i] << " ";
-	cout << endl;
+	
 }
 
-void swap(int a, int b)
-{
-	int temp;
-	temp=a;
-	a=b;
-	b=temp;
-}
 
 int main()
 {
-	int size; //정렬할 배열 크기 
-	cout << "입력하고자 하는 배열의 크기를 입력하세요.";
-	cin >> size;
-	int A[size]; // 정렬할 배열 
+	int size; 
 	
-	cout << "랜덤변수를 입력하세요.";
+	cin >> size;
+	int A[size]; 
+	
+	
 	for(int i=0; i<size; i++)
 	{
 		cin >> A[i];
 	}
 	selectionSort(A, size); 
-	cout << "총 비교 횟수는? " << count << endl;
+	cout << count << endl;
 	
 }
 
