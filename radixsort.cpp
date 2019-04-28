@@ -26,7 +26,6 @@ void radixSort(int A[], int size, int k){
       		A[i] = temp[i];
     
     	digit *= 10;
-    
   	}
 }
 

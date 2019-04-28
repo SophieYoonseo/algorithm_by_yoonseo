@@ -29,7 +29,6 @@ void heapify(int A[], int start, int end)
 		heapify(A, bigger, end);
 	}
 }
-
 void buildHeap(int A[], int end)
 {
 	for(int i=end/2; i>=0; i--)
